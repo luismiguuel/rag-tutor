@@ -1,0 +1,16 @@
+.env
+venv/
+.chroma/
+.git/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+tests/
+eval/
+ml_documents/
+*.egg-info/
+.gitignore
+README.md
+docker-compose.yml
