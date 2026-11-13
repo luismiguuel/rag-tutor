@@ -1,0 +1,357 @@
+{
+    "projeto": "RAG Tutor",
+    "data_avaliacao": "2026-11-13",
+    "arquivo_benchmark": "eval/golden_set.json",
+    "quantidade_resultados": 5,
+    "total_perguntas": 20,
+    "metricas": {
+        "hit_rate_at_5": {
+            "acertos": 16,
+            "total": 16,
+            "percentual": 100.0
+        },
+        "correct_refusal_rate": {
+            "recusas_corretas": 4,
+            "total": 4,
+            "percentual": 100.0
+        },
+        "false_refusal_rate": {
+            "falsas_recusas": 0,
+            "total": 16,
+            "percentual": 0.0
+        },
+        "tempo_medio_recuperacao_segundos": 0.752,
+        "tempo_medio_gerador_segundos": 13.6947,
+        "tempo_medio_total_segundos": 14.4467
+    },
+    "perguntas": [
+        {
+            "pergunta": "O que é Machine Learning?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "01-introducao-ml.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "02-aprendizado-supervisionado.md"
+            ],
+            "resposta": "Machine Learning, ou aprendizado de máquina, é uma área da inteligência artificial que desenvolve métodos capazes de identificar padrões em dados e utilizar esses padrões para realizar previsões ou tomar decisões [01-introducao-ml.md, O que é Machine Learning].\n\nEm vez de programar manualmente todas as regras para cada situação, são fornecidos exemplos a um algoritmo para que ele ajuste um modelo a partir desses dados [01-introducao-ml.md, O que é Machine Learning]. Um modelo é uma representação matemática ou computacional das relações aprendidas durante o treinamento. Após ser treinado, ele pode receber dados que ainda não viu e produzir uma previsão, como estimar o preço de uma casa usando características como área, localização e quantidade de quartos [01-introducao-ml.md, O que é Machine Learning].\n\nÉ importante notar que Machine Learning não significa que o computador compreende os dados da mesma forma que uma pessoa. O sistema encontra regularidades estatísticas e depende da qualidade dos dados, da escolha do algoritmo e da forma como o problema foi definido [01-introducao-ml.md, O que é Machine Learning].",
+            "tempo_recuperacao_segundos": 0.9652,
+            "tempo_gerador_segundos": 4.5765,
+            "tempo_total_segundos": 5.5418
+        },
+        {
+            "pergunta": "Quais são as principais etapas de um projeto de Machine Learning?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "01-introducao-ml.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md"
+            ],
+            "resposta": "As principais etapas de um projeto de Machine Learning são:\n\n1.  **Definição do problema**: Um projeto costuma começar pela definição do problema, onde é necessário entender qual resultado se deseja prever, quais decisões serão tomadas com esse resultado e como o sucesso será medido [01-introducao-ml.md, Etapas de um projeto de Machine Learning].\n2.  **Coleta e exploração de dados**: Em seguida, os dados são coletados e explorados para identificar tipos de variáveis, valores ausentes, registros duplicados, erros e possíveis relações entre atributos [01-introducao-ml.md, Etapas de um projeto de Machine Learning].\n3.  **Preparação e divisão dos dados**: Depois, os dados são preparados e divididos em conjuntos de treinamento, validação e teste, quando aplicável [01-introducao-ml.md, Etapas de um projeto de Machine Learning].\n4.  **Treinamento do algoritmo**: O algoritmo escolhido é treinado usando os dados de treinamento, e seus parâmetros são ajustados para reduzir uma função de perda [01-introducao-ml.md, Etapas de um projeto de Machine Learning].\n5.  **Avaliação de desempenho**: O desempenho é avaliado com métricas adequadas ao problema [01-introducao-ml.md, Etapas de um projeto de Machine Learning].\n6.  **Disponibilização e monitoramento do modelo**: Por fim, o modelo pode ser disponibilizado para uso e monitorado para identificar mudanças nos dados ou queda de desempenho [01-introducao-ml.md, Etapas de um projeto de Machine Learning].",
+            "tempo_recuperacao_segundos": 0.7013,
+            "tempo_gerador_segundos": 3.7316,
+            "tempo_total_segundos": 4.4329
+        },
+        {
+            "pergunta": "Quais são os tipos de aprendizado em Machine Learning?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "01-introducao-ml.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "03-aprendizado-nao-supervisionado.md",
+                "02-aprendizado-supervisionado.md"
+            ],
+            "resposta": "Os tipos de aprendizado em Machine Learning são:\n\n*   **Aprendizado Supervisionado**: Nesta abordagem, os exemplos usados no treinamento possuem uma resposta conhecida, chamada rótulo ou variável-alvo. O modelo aprende a relacionar os atributos de entrada com essa resposta [01-introducao-ml, Tipos de aprendizado]. O modelo aprende a partir de exemplos que contêm atributos de entrada e uma resposta conhecida, ajustando seus parâmetros para aproximar as previsões dos rótulos apresentados [02-aprendizado-supervisionado, Conceito]. Regressão e classificação são tarefas supervisionadas [01-introducao-ml, Tipos de aprendizado].\n\n*   **Aprendizado Não Supervisionado**: Nesta categoria, os dados não possuem uma variável-alvo fornecida [01-introducao-ml, Tipos de aprendizado]. O algoritmo recebe atributos de entrada, mas não recebe uma resposta correta para cada observação durante o treinamento [03-aprendizado-nao-supervisionado, Conceito]. O objetivo é encontrar estruturas, agrupamentos ou representações úteis [01-introducao-ml, Tipos de aprendizado]. Clustering é um exemplo dessa categoria [01-introducao-ml, Tipos de aprendizado].",
+            "tempo_recuperacao_segundos": 0.702,
+            "tempo_gerador_segundos": 2.7458,
+            "tempo_total_segundos": 3.4479
+        },
+        {
+            "pergunta": "Qual é a diferença entre atributos e variável-alvo?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "01-introducao-ml.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "02-aprendizado-supervisionado.md"
+            ],
+            "resposta": "Os atributos, também chamados de características ou features, descrevem cada observação em um conjunto de dados [01-introducao-ml.md, Dados, atributos e variável-alvo].\n\nA variável-alvo, por sua vez, é aquilo que o modelo deve prever em uma tarefa supervisionada [01-introducao-ml.md, Dados, atributos e variável-alvo]. No aprendizado supervisionado, a variável-alvo é a resposta conhecida dos exemplos usados no treinamento [01-introducao-ml.md, Tipos de aprendizado]. Ela pode representar um valor numérico (em tarefas de regressão) ou uma categoria (em tarefas de classificação) [02-aprendizado-supervisionado.md, Escolha da abordagem; 02-aprendizado-supervisionado.md, Classificação].\n\nEm resumo, os atributos são as informações de entrada que descrevem um exemplo, enquanto a variável-alvo é a saída que o modelo busca prever.",
+            "tempo_recuperacao_segundos": 0.8143,
+            "tempo_gerador_segundos": 3.4013,
+            "tempo_total_segundos": 4.2156
+        },
+        {
+            "pergunta": "Qual é a diferença entre regressão e classificação?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "02-aprendizado-supervisionado.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "02-aprendizado-supervisionado.md"
+            ],
+            "resposta": "A diferença principal entre regressão e classificação reside no tipo de variável-alvo e na natureza da previsão:\n\n*   **Regressão:** É uma tarefa de aprendizado supervisionado onde a variável-alvo é numérica e geralmente contínua [02-aprendizado-supervisionado.md, Regressão]. O objetivo é prever um valor numérico [02-aprendizado-supervisionado.md, Escolha da abordagem]. Exemplos incluem a previsão de preço de imóveis, temperatura e demanda de produtos [02-aprendizado-supervisionado.md, Regressão]. A regressão linear é um algoritmo utilizado para problemas de regressão [02-aprendizado-supervisionado.md, Algoritmos comuns], e o erro quadrático médio é uma função de perda comum [02-aprendizado-supervisionado.md, Função de perda e otimização].\n\n*   **Classificação:** É uma tarefa de aprendizado supervisionado onde o objetivo é prever uma categoria [02-aprendizado-supervisionado.md, Escolha da abordagem]. A regressão logística, apesar do nome, é comumente utilizada para classificação e estima a probabilidade de uma classe [02-aprendizado-supervisionado.md, Algoritmos comuns]. Em classificação, a entropia cruzada é frequentemente utilizada como função de perda [02-aprendizado-supervisionado.md, Função de perda e otimização].\n\nAmbas são tarefas de aprendizado supervisionado, onde os exemplos de treinamento possuem uma resposta conhecida (variável-alvo) [01-introducao-ml.md, Tipos de aprendizado]. A escolha entre elas depende do tipo de variável-alvo e da pergunta do projeto [02-aprendizado-supervisionado.md, Escolha da abordagem].",
+            "tempo_recuperacao_segundos": 0.7143,
+            "tempo_gerador_segundos": 4.7078,
+            "tempo_total_segundos": 5.4222
+        },
+        {
+            "pergunta": "O que são funções de perda e otimização?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "02-aprendizado-supervisionado.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "02-aprendizado-supervisionado.md"
+            ],
+            "resposta": "A função de perda quantifica o erro entre a previsão do modelo e o valor esperado [02-aprendizado-supervisionado.md, Função de perda e otimização].\n\nA otimização, nesse contexto, refere-se ao processo pelo qual o algoritmo de treinamento busca ajustar os parâmetros do modelo para reduzir essa perda [02-aprendizado-supervisionado.md, Função de perda e otimização]. Ou seja, os parâmetros são ajustados para reduzir a função de perda [01-introducao-ml.md, Etapas de um projeto de Machine Learning], procurando encontrar coeficientes que minimizem essa função de erro [02-aprendizado-supervisionado.md, Regressão].",
+            "tempo_recuperacao_segundos": 0.6834,
+            "tempo_gerador_segundos": 4.7353,
+            "tempo_total_segundos": 5.4187
+        },
+        {
+            "pergunta": "O que é clustering no aprendizado não supervisionado?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "03-aprendizado-nao-supervisionado.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "03-aprendizado-nao-supervisionado.md"
+            ],
+            "resposta": "No aprendizado não supervisionado, os dados não possuem uma variável-alvo fornecida, e o objetivo é encontrar estruturas, agrupamentos ou padrões úteis [01-introducao-ml.md, Tipos de aprendizado; 03-aprendizado-nao-supervisionado.md, Conceito].\n\nClustering, ou agrupamento, é um exemplo dessa categoria [01-introducao-ml.md, Tipos de aprendizado]. Ele procura organizar observações em grupos de acordo com alguma noção de similaridade. Observações do mesmo grupo devem ser relativamente semelhantes segundo os atributos e a medida escolhidos [03-aprendizado-nao-supervisionado.md, Clustering].",
+            "tempo_recuperacao_segundos": 0.6556,
+            "tempo_gerador_segundos": 3.3482,
+            "tempo_total_segundos": 4.0039
+        },
+        {
+            "pergunta": "Para que serve a redução de dimensionalidade?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "03-aprendizado-nao-supervisionado.md"
+            ],
+            "fontes_encontradas": [
+                "03-aprendizado-nao-supervisionado.md"
+            ],
+            "resposta": "A redução de dimensionalidade serve para representar os dados com menos variáveis, preservando parte da informação relevante [03-aprendizado-nao-supervisionado.md, Redução de dimensionalidade].\n\nEssa abordagem é útil para:\n*   Facilitar a visualização [03-aprendizado-nao-supervisionado.md, Redução de dimensionalidade].\n*   Reduzir o custo computacional [03-aprendizado-nao-supervisionado.md, Redução de dimensionalidade].\n*   Ajudar na exploração de dados [03-aprendizado-nao-supervisionado.md, Redução de dimensionalidade] e conjuntos de dados [03-aprendizado-nao-supervisionado.md, Conceito].\n*   Representar dados com menos dimensões [03-aprendizado-nao-supervisionado.md, Conceito].",
+            "tempo_recuperacao_segundos": 1.2353,
+            "tempo_gerador_segundos": 3.5998,
+            "tempo_total_segundos": 4.8352
+        },
+        {
+            "pergunta": "O que é overfitting e como evitá-lo?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "fontes_encontradas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "resposta": "Overfitting, ou sobreajuste, acontece quando o modelo se ajusta excessivamente aos detalhes e ruídos dos dados de treinamento [04-treinamento-e-validacao.md, Overfitting]. Isso pode resultar em um desempenho muito bom no treinamento, mas significativamente pior em dados não vistos [04-treinamento-e-validacao.md, Overfitting]. Modelos com variância elevada podem apresentar sobreajuste [04-treinamento-e-validacao.md, Viés e variância].\n\nPara evitar o overfitting, as estratégias incluem [04-treinamento-e-validacao.md, Overfitting]:\n*   Limitar a complexidade do modelo.\n*   Utilizar regularização.\n*   Aumentar os dados, quando apropriado.\n*   Realizar seleção de atributos.\n*   Empregar validação adequada.",
+            "tempo_recuperacao_segundos": 0.6948,
+            "tempo_gerador_segundos": 19.7645,
+            "tempo_total_segundos": 20.4595
+        },
+        {
+            "pergunta": "Qual é a diferença entre overfitting e underfitting?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "fontes_encontradas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "resposta": "A diferença entre overfitting (sobreajuste) e underfitting (subajuste) pode ser entendida da seguinte forma:\n\n*   **Underfitting (Subajuste):**\n    *   Acontece quando o modelo não consegue capturar adequadamente os padrões presentes nos dados [04-treinamento-e-validacao.md, Underfitting].\n    *   O desempenho tende a ser ruim tanto no treinamento quanto na avaliação [04-treinamento-e-validacao.md, Underfitting].\n    *   Modelos com viés elevado podem apresentar subajuste [04-treinamento-e-validacao.md, Viés e variância].\n\n*   **Overfitting (Sobreajuste):**\n    *   Acontece quando o modelo se ajusta excessivamente aos detalhes e ruídos dos dados de treinamento [04-treinamento-e-validacao.md, Overfitting].\n    *   Pode apresentar desempenho muito bom no treinamento, mas um desempenho significativamente pior em dados não vistos [04-treinamento-e-validacao.md, Overfitting].\n    *   Modelos com variância elevada podem apresentar sobreajuste [04-treinamento-e-validacao.md, Viés e variância].",
+            "tempo_recuperacao_segundos": 0.6818,
+            "tempo_gerador_segundos": 3.3559,
+            "tempo_total_segundos": 4.0377
+        },
+        {
+            "pergunta": "O que é validação cruzada?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "fontes_encontradas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "resposta": "A validação cruzada é um procedimento onde os dados são divididos para treinamento e validação, sendo útil para aproveitar melhor os exemplos disponíveis em conjuntos de dados pequenos [04-treinamento-e-validacao.md, Divisão dos dados].\n\nExistem diferentes tipos de validação cruzada:\n\n*   **Validação cruzada K-Fold**: Os dados são divididos em K partes, chamadas folds. Em cada rodada, uma parte é usada para validação e as demais para treinamento. Esse processo se repete até que cada parte tenha sido usada para validação uma vez [04-treinamento-e-validacao.md, Validação cruzada].\n*   **Validação cruzada estratificada**: As proporções das classes são aproximadamente preservadas em cada fold. Isso é particularmente útil em problemas de classificação com classes desbalanceadas [04-treinamento-e-validacao.md, Validação cruzada].\n\nNa validação cruzada, transformações como imputação, padronização e seleção de atributos devem ser ajustadas apenas com os dados de treinamento de cada divisão. Isso é normalmente feito por meio de um pipeline executado separadamente em cada fold [04-treinamento-e-validacao.md, Vazamento de dados].\n\nA validação cruzada também é utilizada para a seleção de hiperparâmetros, sendo aplicada aos dados de desenvolvimento para evitar o vazamento de informação da avaliação final [04-treinamento-e-validacao.md, Parâmetros e hiperparâmetros].",
+            "tempo_recuperacao_segundos": 0.6954,
+            "tempo_gerador_segundos": 69.5023,
+            "tempo_total_segundos": 70.1978
+        },
+        {
+            "pergunta": "O que é vazamento de dados e por que ele é prejudicial?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "04-treinamento-e-validacao.md"
+            ],
+            "fontes_encontradas": [
+                "01-introducao-ml.md",
+                "04-treinamento-e-validacao.md"
+            ],
+            "resposta": "Vazamento de dados, ou *data leakage*, ocorre quando informações que não estariam disponíveis no momento real da previsão influenciam o treinamento ou a avaliação [04-treinamento-e-validacao.md, Vazamento de dados]. É um problema onde atributos revelam indiretamente a resposta [01-introducao-ml.md, Dados, atributos e variável-alvo].\n\nEle é prejudicial porque pode prejudicar a avaliação [01-introducao-ml.md, Dados, atributos e variável-alvo], uma vez que o treinamento ou a avaliação são influenciados por dados que não seriam acessíveis na prática [04-treinamento-e-validacao.md, Vazamento de dados].",
+            "tempo_recuperacao_segundos": 0.6704,
+            "tempo_gerador_segundos": 135.2321,
+            "tempo_total_segundos": 135.9026
+        },
+        {
+            "pergunta": "O que é uma matriz de confusão?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "fontes_encontradas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "resposta": "A matriz de confusão é utilizada em classificação para comparar as classes previstas por um modelo com as classes reais [05-metricas-avaliacao.md, Matriz de confusão].\n\nNa classificação binária, a matriz de confusão apresenta quatro resultados principais [05-metricas-avaliacao.md, Matriz de confusão]. Dois desses resultados são:\n*   **Falso Positivo (FP)**: ocorre quando o modelo prevê positivo, mas o valor real é negativo [05-metricas-avaliacao.md, Matriz de confusão].\n*   **Falso Negativo (FN)**: ocorre quando o modelo prevê negativo, mas o valor real é positivo [05-metricas-avaliacao.md, Matriz de confusão].",
+            "tempo_recuperacao_segundos": 0.7109,
+            "tempo_gerador_segundos": 4.021,
+            "tempo_total_segundos": 4.732
+        },
+        {
+            "pergunta": "Qual é a diferença entre precisão e recall?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "fontes_encontradas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "resposta": "A diferença entre precisão e recall reside no que cada métrica mede em relação aos exemplos positivos:\n\n*   **Precisão (Precision)** é a proporção de previsões positivas que realmente são positivas. Ela é calculada por VP / (VP + FP) [05-metricas-avaliacao.md, Precisão]. Ou seja, a precisão foca na qualidade das previsões positivas feitas pelo modelo.\n\n*   **Recall (Sensibilidade)** é a proporção de exemplos positivos reais que foram identificados corretamente. Ele é calculado por VP / (VP + FN) [05-metricas-avaliacao.md, Recall]. O recall, por sua vez, foca na capacidade do modelo de encontrar todos os exemplos positivos reais.\n\nEm resumo, a precisão avalia a exatidão das previsões positivas, enquanto o recall avalia a completude na identificação dos positivos reais.",
+            "tempo_recuperacao_segundos": 0.7727,
+            "tempo_gerador_segundos": 3.39,
+            "tempo_total_segundos": 4.1628
+        },
+        {
+            "pergunta": "O que é F1-score e qual sua relação com precisão e recall?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "fontes_encontradas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "resposta": "O F1-score é a média harmônica entre precisão e recall [05-metricas-avaliacao.md, F1-score].\n\nSua relação com precisão e recall é que ele busca equilibrar essas duas métricas [05-metricas-avaliacao.md, F1-score]. O F1-score é calculado pela seguinte fórmula: 2 × (precisão × recall) / (precisão + recall) [05-metricas-avaliacao.md, F1-score].",
+            "tempo_recuperacao_segundos": 0.8474,
+            "tempo_gerador_segundos": 3.9695,
+            "tempo_total_segundos": 4.8169
+        },
+        {
+            "pergunta": "Quais métricas podem ser utilizadas para avaliar modelos de regressão?",
+            "respondível": true,
+            "resultado": "RESPOSTA GERADA - REVISAR",
+            "acertou_recuperacao": true,
+            "fontes_esperadas": [
+                "05-metricas-avaliacao.md"
+            ],
+            "fontes_encontradas": [
+                "02-aprendizado-supervisionado.md",
+                "05-metricas-avaliacao.md"
+            ],
+            "resposta": "Para avaliar modelos de regressão, as seguintes métricas podem ser utilizadas:\n\n*   **MAE (Mean Absolute Error)**: Ajuda a interpretar o tamanho dos erros [05-metricas-avaliacao.md, Escolha da métrica]. Valores menores indicam menor erro [05-metricas-avaliacao.md, Métricas de regressão].\n*   **RMSE (Root Mean Squared Error)**: Ajuda a interpretar o tamanho dos erros [05-metricas-avaliacao.md, Escolha da métrica]. É a raiz quadrada do MSE e retorna à unidade da variável-alvo [05-metricas-avaliacao.md, Métricas de regressão]. Valores menores indicam menor erro [05-metricas-avaliacao.md, Métricas de regressão].\n*   **R² (Coeficiente de Determinação)**: Oferece uma comparação relativa com uma referência [05-metricas-avaliacao.md, Escolha da métrica]. Compara o desempenho do modelo com uma referência baseada na média da variável-alvo. Um valor próximo de um indica que o modelo explica uma grande parte da variação observada segundo essa definição. R² pode ser negativo quando o modelo tem desempenho pior que a referência [05-metricas-avaliacao.md, Métricas de regressão].",
+            "tempo_recuperacao_segundos": 0.7103,
+            "tempo_gerador_segundos": 3.8115,
+            "tempo_total_segundos": 4.5219
+        },
+        {
+            "pergunta": "Qual é a capital da França?",
+            "respondível": false,
+            "resultado": "RECUSA CORRETA",
+            "acertou_recuperacao": false,
+            "fontes_esperadas": [],
+            "fontes_encontradas": [
+                "02-aprendizado-supervisionado.md",
+                "03-aprendizado-nao-supervisionado.md",
+                "05-metricas-avaliacao.md"
+            ],
+            "resposta": "Não encontrei essa informação nos documentos disponíveis.",
+            "tempo_recuperacao_segundos": 0.7017,
+            "tempo_gerador_segundos": 0.0,
+            "tempo_total_segundos": 0.7017
+        },
+        {
+            "pergunta": "Como funciona a fotossíntese nas plantas?",
+            "respondível": false,
+            "resultado": "RECUSA CORRETA",
+            "acertou_recuperacao": false,
+            "fontes_esperadas": [],
+            "fontes_encontradas": [
+                "05-metricas-avaliacao.md",
+                "02-aprendizado-supervisionado.md",
+                "03-aprendizado-nao-supervisionado.md",
+                "01-introducao-ml.md"
+            ],
+            "resposta": "Não encontrei essa informação nos documentos disponíveis.",
+            "tempo_recuperacao_segundos": 0.703,
+            "tempo_gerador_segundos": 0.0,
+            "tempo_total_segundos": 0.703
+        },
+        {
+            "pergunta": "Quem foi Albert Einstein?",
+            "respondível": false,
+            "resultado": "RECUSA CORRETA",
+            "acertou_recuperacao": false,
+            "fontes_esperadas": [],
+            "fontes_encontradas": [
+                "03-aprendizado-nao-supervisionado.md",
+                "01-introducao-ml.md"
+            ],
+            "resposta": "Não encontrei essa informação nos documentos disponíveis.",
+            "tempo_recuperacao_segundos": 0.7112,
+            "tempo_gerador_segundos": 0.0,
+            "tempo_total_segundos": 0.7112
+        },
+        {
+            "pergunta": "Como calcular a área de um triângulo?",
+            "respondível": false,
+            "resultado": "RECUSA CORRETA",
+            "acertou_recuperacao": false,
+            "fontes_esperadas": [],
+            "fontes_encontradas": [
+                "05-metricas-avaliacao.md",
+                "01-introducao-ml.md"
+            ],
+            "resposta": "Não encontrei essa informação nos documentos disponíveis.",
+            "tempo_recuperacao_segundos": 0.668,
+            "tempo_gerador_segundos": 0.0,
+            "tempo_total_segundos": 0.6681
+        }
+    ]
+}

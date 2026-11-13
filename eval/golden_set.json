@@ -1,0 +1,102 @@
+[
+  {
+    "pergunta": "O que é Machine Learning?",
+    "respondível": true,
+    "fontes_esperadas": ["01-introducao-ml.md"]
+  },
+  {
+    "pergunta": "Quais são as principais etapas de um projeto de Machine Learning?",
+    "respondível": true,
+    "fontes_esperadas": ["01-introducao-ml.md"]
+  },
+  {
+    "pergunta": "Quais são os tipos de aprendizado em Machine Learning?",
+    "respondível": true,
+    "fontes_esperadas": ["01-introducao-ml.md"]
+  },
+  {
+    "pergunta": "Qual é a diferença entre atributos e variável-alvo?",
+    "respondível": true,
+    "fontes_esperadas": ["01-introducao-ml.md"]
+  },
+  {
+    "pergunta": "Qual é a diferença entre regressão e classificação?",
+    "respondível": true,
+    "fontes_esperadas": ["02-aprendizado-supervisionado.md"]
+  },
+  {
+    "pergunta": "O que são funções de perda e otimização?",
+    "respondível": true,
+    "fontes_esperadas": ["02-aprendizado-supervisionado.md"]
+  },
+  {
+    "pergunta": "O que é clustering no aprendizado não supervisionado?",
+    "respondível": true,
+    "fontes_esperadas": ["03-aprendizado-nao-supervisionado.md"]
+  },
+  {
+    "pergunta": "Para que serve a redução de dimensionalidade?",
+    "respondível": true,
+    "fontes_esperadas": ["03-aprendizado-nao-supervisionado.md"]
+  },
+  {
+    "pergunta": "O que é overfitting e como evitá-lo?",
+    "respondível": true,
+    "fontes_esperadas": ["04-treinamento-e-validacao.md"]
+  },
+  {
+    "pergunta": "Qual é a diferença entre overfitting e underfitting?",
+    "respondível": true,
+    "fontes_esperadas": ["04-treinamento-e-validacao.md"]
+  },
+  {
+    "pergunta": "O que é validação cruzada?",
+    "respondível": true,
+    "fontes_esperadas": ["04-treinamento-e-validacao.md"]
+  },
+  {
+    "pergunta": "O que é vazamento de dados e por que ele é prejudicial?",
+    "respondível": true,
+    "fontes_esperadas": ["04-treinamento-e-validacao.md"]
+  },
+  {
+    "pergunta": "O que é uma matriz de confusão?",
+    "respondível": true,
+    "fontes_esperadas": ["05-metricas-avaliacao.md"]
+  },
+  {
+    "pergunta": "Qual é a diferença entre precisão e recall?",
+    "respondível": true,
+    "fontes_esperadas": ["05-metricas-avaliacao.md"]
+  },
+  {
+    "pergunta": "O que é F1-score e qual sua relação com precisão e recall?",
+    "respondível": true,
+    "fontes_esperadas": ["05-metricas-avaliacao.md"]
+  },
+  {
+    "pergunta": "Quais métricas podem ser utilizadas para avaliar modelos de regressão?",
+    "respondível": true,
+    "fontes_esperadas": ["05-metricas-avaliacao.md"]
+  },
+  {
+    "pergunta": "Qual é a capital da França?",
+    "respondível": false,
+    "fontes_esperadas": []
+  },
+  {
+    "pergunta": "Como funciona a fotossíntese nas plantas?",
+    "respondível": false,
+    "fontes_esperadas": []
+  },
+  {
+    "pergunta": "Quem foi Albert Einstein?",
+    "respondível": false,
+    "fontes_esperadas": []
+  },
+  {
+    "pergunta": "Como calcular a área de um triângulo?",
+    "respondível": false,
+    "fontes_esperadas": []
+  }
+]
